@@ -1,0 +1,15 @@
+[Desktop Entry]
+Type=Service
+X-KDE-Submenu=Convert To
+X-KDE-ServiceTypes=KonqPopupMenu/Plugin
+MimeType=image/png;image/webp;image/jpeg;
+Actions=jpg;mp4;
+Encoding=UTF-8
+
+[Desktop Action jpg]
+Name=JPG
+Exec=x-terminal-emulator -e /bin/bash -c "fileconverter -jpg '%F'"
+
+[Desktop Action mp4]
+Name=MP4
+Exec=x-terminal-emulator -e /bin/bash -c "fileconverter -mp4 '%F'"
