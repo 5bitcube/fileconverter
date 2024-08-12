@@ -23,7 +23,7 @@ if [ "$1" == "-jpg" ]; then
 	# If user confirms to delete, delete the original files
 	if [ $delete == "y" ]; then
 		for file in "${files[@]}"; do
-			rm $file
+			rm "$file"
 			mv "${file%.*}-$quality.jpg" "${file%.*}.jpg"
 		done
 	fi
